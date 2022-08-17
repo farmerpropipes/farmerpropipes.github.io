@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Farmer Pro Pipes</title>
-        <meta name="description" content="Farmer Pro Pipes" />
+        <title>Farmer Pro Pipes | Contact Us</title>
+        <meta name="description" content="Farmer Pro Pipes | Contact Us" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <main>
-        Home
+        Contact Us
       </main>
       <Footer />
     </div>
