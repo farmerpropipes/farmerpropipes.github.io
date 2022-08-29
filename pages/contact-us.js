@@ -49,11 +49,11 @@ export default function Home() {
                 </div>
                 <div className='d-flex'>
                   <Image src="/icon/phone.svg" alt="" width={17} height={17} />
-                  <p>+91 98256 87734, +91 95860 78607</p>
+                  <div><a href="tel:+919825687734">+91 98256 87734</a>  <a href="tel:+919586078607">+91 95860 78607</a></div>
                 </div>
                 <div className='d-flex'>
                   <Image src="/icon/email.svg" alt="" width={18.85} height={13.25} />
-                  <p>mahashaktiplast.0607@gmail.com</p>
+                  <a href="mailto:mahashaktiplast.0607@gmail.com">mahashaktiplast.0607@gmail.com</a>
                 </div>
               </div>
               <div className='footer_data'>
