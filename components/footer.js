@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className='d-flex'>
               <Image src="/icon/phone.svg" alt="" width={17} height={17} />
-              <div><a href="tel:+919825687734">+91 98256 87734</a>  <a href="tel:+919586078607">+91 95860 78607</a></div>
+              <a href="tel:+919825687734">+91 98256 87734</a><a href="tel:+919586078607">+91 95860 78607</a>
             </div>
             <div className='d-flex'>
               <Image src="/icon/email.svg" alt="" width={18.85} height={13.25} />
