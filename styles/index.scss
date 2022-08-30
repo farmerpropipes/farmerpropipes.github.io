@@ -131,9 +131,6 @@ button{
 .text-right{ text-align: right;}
 .w-100{ display: block; width: 100%;}
 .w-50{ display: block; width: 50%;}
-.d-none{ display: none;}
-.d-block{ display: block;}
-.d-flex{ display: flex;}
 
 .ml_0{margin-left: 0px;}
 .mt_40{margin-top: 40px;}
@@ -373,7 +370,7 @@ footer{
                 margin-top: 0px;
                 margin-bottom: 10px;
             }
-            .d-flex{
+            .flex{
                 align-items: center;
                 margin-bottom: 10px;
                 &:last-child{margin-bottom: 0px;}
@@ -411,7 +408,7 @@ footer{
                     margin-top: 0px;
                     margin-bottom: 10px;
                 }
-                .d-flex{
+                .flex{
                     align-items: center;
                     margin-bottom: 10px;
                     &:last-child{margin-bottom: 0px;}
