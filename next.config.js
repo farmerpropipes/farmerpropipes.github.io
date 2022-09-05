@@ -4,10 +4,11 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     images: {
-        allowFutureImage: true
+        allowFutureImage: true,
+        unoptimized: true
     }
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/farmer-pro-pipes' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/farmer-pro-pipes' : ''
 }
 
 module.exports = nextConfig
