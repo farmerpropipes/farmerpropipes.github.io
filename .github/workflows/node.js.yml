@@ -28,7 +28,7 @@ jobs:
         cache: 'yarn'
     - name: Build
       run: |
-          yarn i
+          yarn
           yarn run build
           yarn run export
     - name: Deploy
