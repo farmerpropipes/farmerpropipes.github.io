@@ -6,7 +6,8 @@ const nextConfig = {
     images: {
         allowFutureImage: true
     }
-  }
+  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/farmer-pro-pipes' : '',
 }
 
 module.exports = nextConfig
