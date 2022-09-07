@@ -115,15 +115,29 @@ a, .link {
 
 header{
     max-height: 115px;
-    ul li{
-        display: inline;
-        a{
-            font-size: 18px;
-            font-weight: $fw_Bold;
-            
-            margin-left: 40px;
-            padding: 6px;
-            &:hover, &:active, &:focus { color: $color_orange; border-bottom: 3px solid;}
+    ul{
+        li{
+            display: inline;
+            a{
+                font-size: 18px;
+                font-weight: $fw_Bold;
+                
+                margin-left: 40px;
+                padding: 6px;
+                &:hover, &:active, &:focus { color: $color_orange; border-bottom: 3px solid;}
+            }
+        } 
+        &.mobile_menu{
+            li{
+                display: block;
+                margin-bottom: 40px;
+                &:last-child{ margin-bottom: 0;}
+                a{
+                    margin-left: 0px;
+                    
+                    &:hover, &:active, &:focus { color: $color_orange; border-bottom: 0px;}
+                }
+            }
         }
     }
     .main_logo{
@@ -144,6 +158,9 @@ header{
         .header_typo2{ font-size: 64px; line-height: 49px; font-weight: $fw_ExtraBold; margin-bottom: 25px;}
     }
     .header_typo_p{ font-size: 24px; font-weight: $fw_SemiBold;}
+    @media screen and (max-width: 1023px) {
+        text-align: center;
+    }
 }
 
 

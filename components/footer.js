@@ -3,7 +3,7 @@ import Image from 'next/future/image'
 export default function Footer() {
   return(
     <div className='bg_LightGray w-full'>
-      <footer className='container mx-auto py-16'>
+      <footer className='lg:container mx-auto px-4 py-16'>
         <div className='flex lg:flex-row sm:flex-col justify-center items-center'>
           <div className='lg:w-4/12'>
             <Image src="/logo2.svg" alt="" width={373} height={115} />

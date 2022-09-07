@@ -45,7 +45,7 @@ export default function Home() {
           <div className='container mx-auto'>
             <div className='flex lg:flex-row sm:flex-col lg:gap-16 md:gap-8 sm:gap-4 justify-center items-center'>
               <div className='lg:w-6/12'>
-                <Image src="/section_img1.png" alt="" width={630} height={396} className='rounded-3xl card_box_shadow w-full' />
+                <Image src="/section_img1.png" alt="" width={630} height={396} className='rounded-3xl shadow-md w-full' />
               </div>
               <div className='lg:w-6/12'>
                 <h2>About Us</h2>
@@ -66,14 +66,14 @@ export default function Home() {
         <div className='w-full mb-20'>
           <div className='container mx-auto'>
             <div className='flex lg:flex-row sm:flex-col lg:gap-16 md:gap-8 sm:gap-4 justify-center items-center'>
-              <div className='lg:w-6/12 p-8 rounded-3xl card_box_shadow'>
+              <div className='lg:w-6/12 p-8 rounded-3xl shadow-md'>
                 <h2>Production Capacity - 55640 MT</h2>
                 <p>UPVC Pipes/CPVC Pipes/SWR Pipes/Plumbing Pipes - 49866 MT</p>
                 <p>HDPE Pipe/Sprinkler - 3942 MT</p>
                 <p>PVC Fitting - 1832 MT</p>
                 <p>Industrial Plastic Pipes,Rigid PVC Pipes,SWR Pipe Fittings Exporters</p>
               </div>
-              <div className='lg:w-6/12 p-8 rounded-3xl card_box_shadow'>
+              <div className='lg:w-6/12 p-8 rounded-3xl shadow-md'>
                 <h2>Product Quality</h2>
                 <p>We give prime importance to the quality of products manufactured by us, as quality is the basic criterion that manages to give us an edge in the market. Hence, we conduct third party inspections to closely scrutinize the products delivered by us right from the procurement of the raw material to the final dispatch to the clients.</p>
               </div>
