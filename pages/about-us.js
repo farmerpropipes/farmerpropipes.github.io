@@ -3,6 +3,7 @@ import Header from '/components/header'
 import Footer from '/components/footer'
 import Image from 'next/future/image'
 import Advantages from '../components/advantages'
+import Certificates from '../components/certificates'
 
 export default function Home() {
   return (
@@ -59,21 +60,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-full mb-20'>
-          <div className='container mx-auto'>
-            <div className='flex gap-5 justify-center items-center mb-7'>
-              <Image src="/title_icon/certificates.svg" alt="" width={43} height={47} />
-              <h1 className='m-0'>Certificates</h1>
-            </div>
-            <div className='flex lg:flex-row sm:flex-col lg:gap-16 md:gap-8 sm:gap-4 justify-center items-center'>
-              <Image src="/certificates/1.png" alt="" width={90} height={96} />
-              <Image src="/certificates/2.png" alt="" width={140} height={96} />
-              <Image src="/certificates/3.png" alt="" width={104} height={103} />
-              <Image src="/certificates/4.png" alt="" width={125} height={99} />
-              <Image src="/certificates/5.png" alt="" width={153} height={110} />
-            </div>
-          </div>
-        </div>
+        <Certificates />
 
         <div className='w-full mb-20'>
           <div className='container mx-auto text-center'>
