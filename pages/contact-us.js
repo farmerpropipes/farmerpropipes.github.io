@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '/components/header'
 import Footer from '/components/footer'
 import Image from 'next/future/image'
+import Advantages from '../components/advantages'
 
 export default function Home() {
   return (
@@ -17,31 +18,7 @@ export default function Home() {
         <div className='w-full bg-no-repeat bg-cover bg-center flex items-end page_hero page_contact'>
           <div className='container mx-auto page_title uppercase mb-5'>Contact Us</div>
         </div>
-        
-        <div className='w-full mb-20 bg_green'>
-          <div className='container mx-auto py-8'>
-            <div className='flex lg:flex-row sm:flex-col lg:gap-16 md:gap-8 sm:gap-4 justify-center'>
-              <div className='icon_card flex items-center'>
-                <Image src="/icon/1.svg" alt="" width={36.15} height={46} />
-                <p>Quality<br/>Assurance</p>
-              </div>
-              <div className='icon_card flex items-center'>
-                <Image src="/icon/2.svg" alt="" width={44.71} height={42} />
-                <p>Revolutionary<br/>Technology</p>
-              </div>
-              <div className='icon_card flex items-center'>
-                <Image src="/icon/3.svg" alt="" width={43.56} height={43} />
-                <p>Sustainable</p>
-              </div>
-              <div className='icon_card flex items-center'>
-                <Image src="/icon/4.svg" alt="" width={43.76} height={46} />
-                <p>Innovation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-
+        <Advantages /> 
         <div className='w-full mb-20'>
           <div className='container mx-auto w-7/12'>
             <div className='flex lg:flex-row sm:flex-col lg:gap-16 md:gap-8 sm:gap-4 justify-center items-center'>

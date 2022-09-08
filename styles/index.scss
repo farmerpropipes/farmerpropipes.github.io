@@ -144,6 +144,10 @@ header{
         position: relative;
         top: 25px;
     }
+    .active{
+        color: $color_orange;
+        border-bottom: 3px solid;
+    }
 }
 
 .home_hero{

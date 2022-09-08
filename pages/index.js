@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Header from '/components/header'
 import Footer from '/components/footer'
 import Image from 'next/future/image'
+import Advantages from '../components/advantages'
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
                   <div className='header_typo2'>Farmer Pro Pipes</div>
                 </div>
                 <div className='header_typo_p'>Take a look of our wide rang of products</div>
-                <button className='btn btn_lg'>See Our Products</button>
+                <Link href="/products"><button className='btn btn_lg'>See Our Products</button></Link>
               </div>
               <div className='lg:w-6/12 flex justify-end mt-8 lg:mt-0'>
                 <Image src="/hero_product.png" alt="" width={571} height={452} />
@@ -31,30 +33,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      
-        <div className='w-full mb-12 md:mb-16 lg:mb-20 bg_green'>
-          <div className='container mx-auto px-4 py-4 md:py-6 lg:py-8'>
-            <div className='flex flex-wrap justify-center gap-6 md:gap-10 lg:gap-16'>
-              <div className='icon_card flex items-center justify-center w-4/12 md:w-auto'>
-                <Image src="/icon/1.svg" alt="" width={36.15} height={46} />
-                <p>Quality<br/>Assurance</p>
-              </div>
-              <div className='icon_card flex items-center justify-center w-4/12 md:w-auto'>
-                <Image src="/icon/2.svg" alt="" width={44.71} height={42} />
-                <p>Revolutionary<br/>Technology</p>
-              </div>
-              <div className='icon_card flex items-center justify-center w-4/12 md:w-auto'>
-                <Image src="/icon/3.svg" alt="" width={43.56} height={43} />
-                <p>Sustainable</p>
-              </div>
-              <div className='icon_card flex items-center justify-center w-4/12 md:w-auto'>
-                <Image src="/icon/4.svg" alt="" width={43.76} height={46} />
-                <p>Innovation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <Advantages />
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
             <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center items-center'>
@@ -64,7 +43,7 @@ export default function Home() {
               <div className='w-full lg:w-6/12'>
                 <h1>About Us</h1>
                 <p>Farmer Pro Pipes & Fitting Pvt. Ltd., a Gujarat based business entity is appreciated in the market for offering premium quality Industrial Pipes, Industrial Pipe Fittings and HDPE pipes & Fittings. We manufacture and supply rigid PVC Pipes, HDPE Pipes & fittings, SWR Pipes & Fittings, PVC Pipe Fittings, Underground Sewerage Pipes, solvent Cement, etc.</p>
-                <button className='btn'>Know More</button>
+                <Link href="/about-us"><button className='btn'>Know More</button></Link>
               </div>
             </div>
           </div>
@@ -107,7 +86,7 @@ export default function Home() {
               <div className=' w-full lg:w-4/12'>
                 <h1>Hot Products</h1>
                 <p>We build responsible water management solutions that can unlock higher crop yields, better harvest, and efficient resource productivity for prolonged use.</p>
-                <button className='btn'>See Our Products</button>
+                <Link href="/products"><button className='btn'>See Our Products</button></Link>
               </div>
               <div className='w-full lg:w-8/12 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 lg:gap-8'>
                 <div className='text-center mx-auto'>
