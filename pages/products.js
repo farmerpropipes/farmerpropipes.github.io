@@ -16,12 +16,12 @@ export default function Home() {
       <Header />
       <main>
         <div className='w-full bg-no-repeat bg-cover bg-center flex items-end page_hero page_product'>
-          <div className='container mx-auto px-4 page_title uppercase mb-5'>Our Products</div>
+          <div className='container mx-auto px-6 page_title uppercase mb-5'>Our Products</div>
         </div>
         <Advantages />
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
-          <div className='container mx-auto px-4'>
+          <div className='container mx-auto px-6'>
             <div className='flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-between'>
               <div className='w-full lg:w-8/12'>
                 <div className='product_flex_copy'>
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
-          <div className='container mx-auto px-4'>
+          <div className='container mx-auto px-6'>
             <div className='flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-between'>
               <div className='w-full lg:w-8/12'>
                 <div className='product_flex_copy'>
@@ -112,25 +112,25 @@ export default function Home() {
         </div>
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
-          <div className='container mx-auto px-4'>
+          <div className='container mx-auto px-6'>
             <div className='flex gap-5 justify-center items-center mb-7'>
               <Image src="/title_icon/certificates.svg" alt="" width={43} height={47} />
               <h1 className='m-0'>Other Products</h1>
             </div>
-            <div className='flex flex-wrap gap-8 md:gap-12 lg:gap-16 justify-center '>
-              <div className='p_card text-center'>
+            <div className='flex flex-wrap gap-8 md:gap-12 lg:gap-16 justify-center'>
+              <div className='text-center'>
                 <Image src="/product/page/5.png" alt="" width={240} height={240} />
                 <h3>Garden Pipes</h3>
               </div>
-              <div className='p_card text-center'>
+              <div className='text-center'>
                 <Image src="/product/page/6.png" alt="" width={240} height={240} />
                 <h3>PP Ropes</h3>
               </div>
-              <div className='p_card text-center'>
+              <div className='text-center'>
                 <Image src="/product/page/7.png" alt="" width={240} height={240} />
                 <h3>Section Pipes</h3>
               </div>
-              <div className='p_card text-center'>
+              <div className='text-center'>
                 <Image src="/product/page/8.png" alt="" width={240} height={240} />
                 <h3>LD Kishan Pipes</h3>
               </div>
