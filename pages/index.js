@@ -52,14 +52,18 @@ export default function Home() {
 
         <div className='w-full mb-10 md:mb-14 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center items-center'>
+            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center'>
               <div className='w-full lg:w-6/12 card_vision p-8 rounded-3xl shadow-md'>
-                <h2>Vision</h2>
-                <p>Farmer Pro Pipes was established in 2010 with the aim of manufacturing plumbing and drainage systems in India. Today, we cover the needs of millions of farmers. Our aims to be a truly global, high-performing organisation delivering quality products and services to its customers.</p>
+                <div className='flex flex-col justify-center'>
+                  <h2>Vision</h2>
+                  <p>Farmer Pro Pipes was established in 2010 with the aim of manufacturing plumbing and drainage systems in India. Today, we cover the needs of millions of farmers. Our aims to be a truly global, high-performing organisation delivering quality products and services to its customers.</p>
+                </div>
               </div>
               <div className='w-full lg:w-6/12 card_mission p-8 rounded-3xl shadow-md'>
-                <h2>Mission</h2>
-                <p>Farmer Pro Pipes was established in 2010 with the aim of manufacturing plumbing and drainage systems in India. Today, we cover the needs of millions of farmers. Our aims to be a truly global, high-performing organisation delivering quality products and services to its customers.</p>
+                <div className='flex flex-col justify-center'>
+                  <h2>Mission</h2>
+                  <p>Farmer Pro Pipes was established in 2010 with the aim of manufacturing plumbing and drainage systems in India. Today, we cover the needs of millions of farmers. Our aims to be a truly global, high-performing organisation delivering quality products and services to its customers.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +111,7 @@ export default function Home() {
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row justify-center items-center w-full lg:w-8/12 mx-auto'>
+            <div className='flex flex-col md:flex-row justify-center items-center w-full md: lg:w-8/12 mx-auto'>
               <div className='w-full lg:w-6/12'>
                 <Image src="/office.png" alt="" width={631} height={421} className='rounded-3xl w-full'/>
               </div>

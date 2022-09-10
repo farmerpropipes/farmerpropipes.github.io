@@ -204,7 +204,12 @@ header{
 
 footer ,.footer{
     b, p{font-size: 15px; line-height: normal;}
-    p.fix_address_w{max-width: 325px;}
+    p.fix_address_w{
+        max-width: 350px;
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
 }
 .footer_line{
     font-size: 12px; 
@@ -230,6 +235,6 @@ footer ,.footer{
         }
     }
 }
-.product_flex_img{
-    min-width: 400px;
+.product_img{
+    img{max-width: 100%;}
 }
