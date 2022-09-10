@@ -22,10 +22,10 @@ export default function Home() {
             <div className='flex flex-col lg:flex-row justify-center items-center py-16 md:py-20 lg:py-24'>
               <div className='lg:w-6/12'>
                 <div  className='header_typo'>
-                  <div className='header_typo1'>Welcome to</div>
-                  <div className='header_typo2'>Farmer Pro Pipes</div>
+                  <div className='header_typo1 text_shadow'>Welcome to</div>
+                  <div className='header_typo2 text_shadow'>Farmer Pro Pipes</div>
                 </div>
-                <div className='header_typo_p'>Take a look of our wide rang of products</div>
+                <div className='header_typo_p text_shadow'>Take a look of our wide rang of products</div>
                 <Link href="/products"><button className='btn btn_lg'>See Our Products</button></Link>
               </div>
               <div className='lg:w-6/12 flex justify-end mt-8 lg:mt-0'>
@@ -37,7 +37,7 @@ export default function Home() {
         <Advantages />
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center items-center'>
+            <div className='flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 justify-center items-center'>
               <div className='w-full lg:w-6/12'>
                 <Image src="/section_img1.png" alt="" width={630} height={396} className='rounded-3xl shadow-md w-full' />
               </div>
@@ -52,7 +52,7 @@ export default function Home() {
 
         <div className='w-full mb-10 md:mb-14 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center'>
+            <div className='flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 justify-center'>
               <div className='w-full lg:w-6/12 card_vision p-8 rounded-3xl shadow-md'>
                 <div className='flex flex-col justify-center'>
                   <h2>Vision</h2>
@@ -73,7 +73,7 @@ export default function Home() {
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20 bg_LightGray'>
           <div className='container mx-auto px-4 py-12 md:py-6 lg:py-8'>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 justify-center items-center'>
+          <div className='flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-center items-center'>
               <div className=' w-full lg:w-4/12'>
                 <h1>Hot Products</h1>
                 <p>We build responsible water management solutions that can unlock higher crop yields, better harvest, and efficient resource productivity for prolonged use.</p>

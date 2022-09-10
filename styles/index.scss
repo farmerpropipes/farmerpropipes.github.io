@@ -46,15 +46,38 @@ $transition: 100ms;
     transition: all ($time1) ease-out ($time2);
 }
 
+body {
+    font-family: $ff_Primary;
+    font-weight: $fw_Regular;
+    font-size: 16px;
+    line-height: normal;
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    
+    color: $color_black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+a, .link {
+    font-size: 14px;
+    color: $color_black; text-decoration: none; outline: 0; cursor: pointer;
+    &:hover, &:active, &:focus { color: darken($color_orange, 5%); outline: 0; text-decoration: none; @include transition($transition, 0s);}
+}
+
 
 // --------------- Typo ---------------
-h1{ font-size: 30px; font-weight: $fw_ExtraBold; margin-bottom: 10px;}
+h1{ 
+    font-size: 30px; font-weight: $fw_ExtraBold; margin-bottom: 10px;
+    @media screen and (max-width: 360px) { }
+}
 h2{ font-size: 20px; font-weight: $fw_Bold; margin-bottom: 10px;}
 h3{ font-size: 18px; font-weight: $fw_Bold; margin-top: 20px;}
 p{ font-size: 16px; line-height: 26px; }
 
 .card_box_shadow { @include box-shadow(4px, 4px, 30px, RGBA(0, 0, 0, 0.1));}
-
+.text_shadow{ text-shadow: 1px 1px 40px RGBA(0, 0, 0, 0.4) }
 .header_box_shadow { @include box-shadow(4px, 4px, 30px, RGBA(0, 0, 0, 0.1));}
 
 
@@ -91,25 +114,6 @@ button{
 }
 
 
-body {
-    font-family: $ff_Primary;
-    font-weight: $fw_Regular;
-    font-size: 16px;
-    line-height: 26px;
-
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    
-    color: $color_black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-}
-a, .link {
-    font-size: 14px;
-    color: $color_black; text-decoration: none; outline: 0; cursor: pointer;
-    &:hover, &:active, &:focus { color: darken($color_orange, 5%); outline: 0; text-decoration: none; @include transition($transition, 0s);}
-}
 
 
 
@@ -143,6 +147,10 @@ header{
     .main_logo{
         position: relative;
         top: 25px;
+        img{
+            @media screen and (max-width: 640px) {width: 80%;}
+        }
+        
     }
     .active{
         color: $color_orange;
@@ -158,10 +166,21 @@ header{
     color: $color_white;
     .header_typo{
         text-transform: uppercase;
-        .header_typo1{ font-size: 30px; line-height: 22px; font-weight: $fw_SemiBold; margin-bottom: 15px;}
-        .header_typo2{ font-size: 64px; line-height: 49px; font-weight: $fw_ExtraBold; margin-bottom: 25px;}
+        .header_typo1{ 
+            font-size: 39px; line-height: 39px; font-weight: $fw_SemiBold; margin-bottom: 10px;
+            
+            @media screen and (max-width: 640px) { font-size: 30px; line-height: 30px; margin-bottom: 10px; }
+        }
+        .header_typo2{ 
+            font-size: 64px; line-height: 64px; font-weight: $fw_ExtraBold; margin-bottom: 30px;
+            @media screen and (max-width: 640px) { font-size: 55px; line-height: 55px; margin-bottom: 30px; }
+        }
     }
-    .header_typo_p{ font-size: 24px; font-weight: $fw_SemiBold;}
+    .header_typo_p{ 
+        font-size: 24px; line-height: normal; font-weight: $fw_SemiBold;
+        @media screen and (max-width: 640px) { font-size: 22px; }
+        @media screen and (max-width: 420px) { font-size: 20px; }
+    }
     @media screen and (max-width: 1023px) {
         text-align: center;
     }
@@ -181,16 +200,28 @@ header{
     &.page_contact{ background-image: url('/hero/contact.png');}
 }
 
-
-.icon_card{
-    p{ 
-        margin-left: 15px; 
-        font-size: 14px;
-        line-height: 20px;
-        color: $color_white;
-        font-weight: $fw_Bold;
+.icon_section{
+    width: 60%;
+    @media screen and (max-width: 1535px) {width: 70%;}
+    @media screen and (max-width: 1280px) {width: 90%;}
+    @media screen and (max-width: 1024px) {width: 100%;}
+    .icon_card{
+        img{
+            @media screen and (max-width: 360px) {width: 35px; }
+        }
+        p{ 
+            margin-left: 15px; 
+            font-size: 14px;
+            line-height: 20px;
+            color: $color_white;
+            font-weight: $fw_Bold;
+            
+            @media screen and (max-width: 360px) {margin-left: 10px; font-size: 13px; line-height: 18px; font-weight: $fw_SemiBold;}
+        }
     }
 }
+
+
 
 .card_vision{
     background: url('/vision.svg') no-repeat;

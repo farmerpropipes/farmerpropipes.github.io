@@ -21,7 +21,7 @@ export default function Header() {
             </ul>
           </div>
           <Popover className="lg:hidden">
-            <Popover.Button className="relative z-10 [&:not(:focus-visible)]:focus:outline-none">
+            <Popover.Button className="relative z-10 [&:not(:focus-visible)]:focus:outline-none p-3">
               <Image src="/menu.svg" alt="Vercel Logo" width={25} height={20} />
             </Popover.Button>
             <Popover.Overlay className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur" />

@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between'>
+            <div className='flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-between'>
               <div className='w-full lg:w-8/12'>
                 <div className='product_flex_copy'>
                   <h1>HDPE Pipe & Fittings</h1>
@@ -57,7 +57,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className='w-full lg:w-4/12 flex flex-col gap-8 lg:gap-16 justify-center items-center lg:items-end'>
+              <div className='w-full lg:w-4/12 flex flex-col gap-8 md:gap-12 lg:gap-16 justify-center items-center lg:items-end'>
                   <Image src="/product/page/1.png" alt="" width={400} height={297.57} className='w-6/12 lg:w-full' />
                   <Image src="/product/page/2.png" alt="" width={400} height={308.33} className='w-6/12 lg:w-full'/>
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
 
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between'>
+            <div className='flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-between'>
               <div className='w-full lg:w-8/12'>
                 <div className='product_flex_copy'>
                   <h1>Sprinkler Pipe</h1>
@@ -103,7 +103,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className='w-full lg:w-4/12 flex flex-col gap-8 lg:gap-16 justify-center items-center lg:items-end'>
+              <div className='w-full lg:w-4/12 flex flex-col gap-8 md:gap-12 lg:gap-16 justify-center items-center lg:items-end'>
                   <Image src="/product/page/3.png" alt="" width={400} height={262.03} className='w-6/12 lg:w-full' />
                 <Image src="/product/page/4.png" alt="" width={400} height={269.09} className='w-6/12 lg:w-full'/>
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
               <Image src="/title_icon/certificates.svg" alt="" width={43} height={47} />
               <h1 className='m-0'>Other Products</h1>
             </div>
-            <div className='flex flex-wrap justify-center gap-8 lg:gap-16'>
+            <div className='flex flex-wrap gap-8 md:gap-12 lg:gap-16 justify-center '>
               <div className='p_card text-center'>
                 <Image src="/product/page/5.png" alt="" width={240} height={240} />
                 <h3>Garden Pipes</h3>

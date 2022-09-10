@@ -8,7 +8,7 @@ export default function Certificates() {
           <Image src="/title_icon/certificates.svg" alt="" width={43} height={47} />
           <h1 className='m-0'>Certificates</h1>
         </div>
-        <div className='flex flex-wrap justify-center gap-6 lg:gap-16'>
+        <div className='flex flex-wrap gap-8 md:gap-12 lg:gap-16 justify-center '>
           <div className='w-3/12 md:w-auto flex items-center justify-center'><Image src="/certificates/1.png" alt="" width={90} height={96} className='md:w-4/5 lg:w-full' /></div>
           <div className='w-3/12 md:w-auto flex items-center justify-center'><Image src="/certificates/2.png" alt="" width={140} height={96} className='md:w-4/5 lg:w-full' /></div>
           <div className='w-3/12 md:w-auto flex items-center justify-center'><Image src="/certificates/3.png" alt="" width={104} height={103} className='md:w-4/5 lg:w-full' /></div>

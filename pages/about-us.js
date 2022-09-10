@@ -22,7 +22,7 @@ export default function Home() {
         <Advantages />
         <div className='w-full mb-12 md:mb-16 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center items-center'>
+            <div className='flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 justify-center items-center'>
               <div className='w-full lg:w-6/12'>
                 <Image src="/section_img1.png" alt="" width={630} height={396} className='rounded-3xl shadow-md w-full' />
               </div>
@@ -45,7 +45,7 @@ export default function Home() {
 
         <div className='w-full mb-10 md:mb-14 lg:mb-20'>
           <div className='container mx-auto px-4'>
-            <div className='flex flex-col md:flex-row gap-8 lg:gap-16 justify-center'>
+            <div className='flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 justify-center'>
               <div className='w-full lg:w-6/12 p-8 rounded-3xl shadow-md'>
                 <div className='flex flex-col justify-center'>
                   <h2>Production Capacity - 55640 MT</h2>
@@ -89,7 +89,7 @@ export default function Home() {
               <Image src="/title_icon/achievements.svg" alt="" width={55.75} height={40.19} />
               <h1 className='m-0'>Achievements</h1>
             </div>
-            <div className='flex flex-wrap justify-center gap-8 lg:gap-16'>
+            <div className='flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16'>
               <div className='p_card text-center'>
                 <Image src="/achievements/1.svg" alt="" width={187.64} height={240} />
                 <h3>2019</h3>
@@ -116,7 +116,7 @@ export default function Home() {
               <Image src="/title_icon/achievements.svg" alt="" width={55.75} height={40.19} />
               <h1 className='m-0'>Management Team</h1>
             </div>
-            <div className='flex flex-wrap justify-center gap-8 lg:gap-16'>
+            <div className='flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16'>
               <div className='p_card text-center'>
                 <Image src="/management/1.png" alt="" width={283} height={283} />
                 <h3>Mr. Kailash Chandra Agarwal</h3>
